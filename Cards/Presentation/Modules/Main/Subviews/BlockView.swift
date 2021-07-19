@@ -70,8 +70,10 @@ struct BlockView: View {
     }
 }
 
+// MARK: - Previews
 
 struct BlockView_Previews: PreviewProvider {
+    
     static var previews: some View {
         BlockView(block: Block.mockData().last!)
     }

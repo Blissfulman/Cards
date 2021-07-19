@@ -16,6 +16,7 @@
 		CEE13D2826A5DAA800234815 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2726A5DAA800234815 /* Block.swift */; };
 		CEE13D2A26A5E72A00234815 /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2926A5E72A00234815 /* ColorSet.swift */; };
 		CEE13D2F26A5F66000234815 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2E26A5F66000234815 /* ProfileView.swift */; };
+		CEE13D3226A60F4800234815 /* DayDiagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D3126A60F4800234815 /* DayDiagramView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CEE13D2726A5DAA800234815 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		CEE13D2926A5E72A00234815 /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
 		CEE13D2E26A5F66000234815 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CEE13D3126A60F4800234815 /* DayDiagramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDiagramView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +101,8 @@
 		CEE13D1F26A5D66500234815 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				CEE13D2B26A5E7F000234815 /* Common */,
+				CEE13D3026A6044500234815 /* Components */,
+				CEE13D2B26A5E7F000234815 /* Style */,
 				CEE13D2C26A5E80700234815 /* Modules */,
 			);
 			path = Presentation;
@@ -131,12 +134,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		CEE13D2B26A5E7F000234815 /* Common */ = {
+		CEE13D2B26A5E7F000234815 /* Style */ = {
 			isa = PBXGroup;
 			children = (
 				CEE13D2926A5E72A00234815 /* ColorSet.swift */,
 			);
-			path = Common;
+			path = Style;
 			sourceTree = "<group>";
 		};
 		CEE13D2C26A5E80700234815 /* Modules */ = {
@@ -154,6 +157,14 @@
 				CEE13D2E26A5F66000234815 /* ProfileView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		CEE13D3026A6044500234815 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CEE13D3126A60F4800234815 /* DayDiagramView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +241,7 @@
 				CEE13D2326A5D95400234815 /* WeekProgressView.swift in Sources */,
 				CEE13D2826A5DAA800234815 /* Block.swift in Sources */,
 				CEE13D1126A5D3EF00234815 /* MainView.swift in Sources */,
+				CEE13D3226A60F4800234815 /* DayDiagramView.swift in Sources */,
 				CEE13D2F26A5F66000234815 /* ProfileView.swift in Sources */,
 				CEE13D0F26A5D3EF00234815 /* CardsApp.swift in Sources */,
 			);

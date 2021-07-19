@@ -12,11 +12,13 @@ struct CardsApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
-                MainView()
-                    .tabItem {
-                        Image(systemName: "house.fill")
-                        Text("Главная")
-                    }
+                NavigationView {
+                    MainView()
+                }
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text("Главная")
+                }
                 
                 ProfileView()
                     .tabItem {

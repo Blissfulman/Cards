@@ -9,7 +9,11 @@ import SwiftUI
 
 struct MainView: View {
     
+    // MARK: - Properties
+    
     let blocks: [Block] = Block.mockData()
+    
+    // MARK: - Views
     
     var body: some View {
         ScrollView {
@@ -19,10 +23,14 @@ struct MainView: View {
                 BlockView(block: block)
             }
         }
+        .navigationBarTitle("Главная", displayMode: .inline)
     }
 }
 
+// MARK: - Previews
+
 struct MainView_Previews: PreviewProvider {
+    
     static var previews: some View {
         MainView()
     }

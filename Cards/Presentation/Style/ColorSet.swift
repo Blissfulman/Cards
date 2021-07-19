@@ -9,6 +9,8 @@ import SwiftUI
 
 enum ColorSet {
     static let shadowGrey = Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
+    static let purple = Color(#colorLiteral(red: 0.5562907554, green: 0.5643569458, blue: 0.9011715221, alpha: 1))
+    static let dirtyWhite = Color(#colorLiteral(red: 0.9795864691, green: 0.9670129155, blue: 0.9710643835, alpha: 1))
 }
 
 extension ColorSet {
