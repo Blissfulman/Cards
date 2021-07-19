@@ -11,6 +11,10 @@
 		CEE13D1126A5D3EF00234815 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D1026A5D3EF00234815 /* MainView.swift */; };
 		CEE13D1326A5D3F000234815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE13D1226A5D3F000234815 /* Assets.xcassets */; };
 		CEE13D1626A5D3F000234815 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE13D1526A5D3F000234815 /* Preview Assets.xcassets */; };
+		CEE13D2326A5D95400234815 /* WeekProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2226A5D95400234815 /* WeekProgressView.swift */; };
+		CEE13D2526A5DA8400234815 /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2426A5DA8400234815 /* BlockView.swift */; };
+		CEE13D2826A5DAA800234815 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2726A5DAA800234815 /* Block.swift */; };
+		CEE13D2A26A5E72A00234815 /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2926A5E72A00234815 /* ColorSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		CEE13D1226A5D3F000234815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEE13D1526A5D3F000234815 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEE13D1726A5D3F000234815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE13D2226A5D95400234815 /* WeekProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekProgressView.swift; sourceTree = "<group>"; };
+		CEE13D2426A5DA8400234815 /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
+		CEE13D2726A5DAA800234815 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		CEE13D2926A5E72A00234815 /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,7 @@
 		CEE13D0D26A5D3EF00234815 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				CEE13D2626A5DA9C00234815 /* Models */,
 				CEE13D1F26A5D66500234815 /* Presentation */,
 				CEE13D1D26A5D62B00234815 /* Resources */,
 				CEE13D1E26A5D63F00234815 /* Supporting files */,
@@ -88,9 +97,52 @@
 		CEE13D1F26A5D66500234815 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				CEE13D1026A5D3EF00234815 /* MainView.swift */,
+				CEE13D2B26A5E7F000234815 /* Common */,
+				CEE13D2C26A5E80700234815 /* Modules */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CEE13D2026A5D93D00234815 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CEE13D1026A5D3EF00234815 /* MainView.swift */,
+				CEE13D2126A5D94100234815 /* Subviews */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CEE13D2126A5D94100234815 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				CEE13D2226A5D95400234815 /* WeekProgressView.swift */,
+				CEE13D2426A5DA8400234815 /* BlockView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		CEE13D2626A5DA9C00234815 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEE13D2726A5DAA800234815 /* Block.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEE13D2B26A5E7F000234815 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CEE13D2926A5E72A00234815 /* ColorSet.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CEE13D2C26A5E80700234815 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CEE13D2026A5D93D00234815 /* Main */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +214,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE13D2526A5DA8400234815 /* BlockView.swift in Sources */,
+				CEE13D2A26A5E72A00234815 /* ColorSet.swift in Sources */,
+				CEE13D2326A5D95400234815 /* WeekProgressView.swift in Sources */,
+				CEE13D2826A5DAA800234815 /* Block.swift in Sources */,
 				CEE13D1126A5D3EF00234815 /* MainView.swift in Sources */,
 				CEE13D0F26A5D3EF00234815 /* CardsApp.swift in Sources */,
 			);

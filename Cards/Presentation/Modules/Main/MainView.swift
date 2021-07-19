@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    let blocks: [Block] = Block.mockData()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ScrollView {
+            WeekProgressView()
+                        
+            ForEach(blocks) { block in
+                BlockView(block: block)
+            }
+        }
     }
 }
 
