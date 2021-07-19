@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CEE13D0F26A5D3EF00234815 /* CardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D0E26A5D3EF00234815 /* CardsApp.swift */; };
-		CEE13D1126A5D3EF00234815 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D1026A5D3EF00234815 /* ContentView.swift */; };
+		CEE13D1126A5D3EF00234815 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D1026A5D3EF00234815 /* MainView.swift */; };
 		CEE13D1326A5D3F000234815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE13D1226A5D3F000234815 /* Assets.xcassets */; };
 		CEE13D1626A5D3F000234815 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE13D1526A5D3F000234815 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		CEE13D0B26A5D3EF00234815 /* Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE13D0E26A5D3EF00234815 /* CardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsApp.swift; sourceTree = "<group>"; };
-		CEE13D1026A5D3EF00234815 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CEE13D1026A5D3EF00234815 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CEE13D1226A5D3F000234815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEE13D1526A5D3F000234815 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEE13D1726A5D3F000234815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,10 +52,9 @@
 		CEE13D0D26A5D3EF00234815 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
-				CEE13D0E26A5D3EF00234815 /* CardsApp.swift */,
-				CEE13D1026A5D3EF00234815 /* ContentView.swift */,
-				CEE13D1226A5D3F000234815 /* Assets.xcassets */,
-				CEE13D1726A5D3F000234815 /* Info.plist */,
+				CEE13D1F26A5D66500234815 /* Presentation */,
+				CEE13D1D26A5D62B00234815 /* Resources */,
+				CEE13D1E26A5D63F00234815 /* Supporting files */,
 				CEE13D1426A5D3F000234815 /* Preview Content */,
 			);
 			path = Cards;
@@ -67,6 +66,31 @@
 				CEE13D1526A5D3F000234815 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEE13D1D26A5D62B00234815 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEE13D1226A5D3F000234815 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEE13D1E26A5D63F00234815 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				CEE13D0E26A5D3EF00234815 /* CardsApp.swift */,
+				CEE13D1726A5D3F000234815 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		CEE13D1F26A5D66500234815 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CEE13D1026A5D3EF00234815 /* MainView.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEE13D1126A5D3EF00234815 /* ContentView.swift in Sources */,
+				CEE13D1126A5D3EF00234815 /* MainView.swift in Sources */,
 				CEE13D0F26A5D3EF00234815 /* CardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +295,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Cards/Preview Content\"";
 				DEVELOPMENT_TEAM = 4J6378W446;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Cards/Info.plist;
+				INFOPLIST_FILE = "Cards/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,7 +317,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Cards/Preview Content\"";
 				DEVELOPMENT_TEAM = 4J6378W446;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Cards/Info.plist;
+				INFOPLIST_FILE = "Cards/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
