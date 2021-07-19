@@ -15,6 +15,7 @@
 		CEE13D2526A5DA8400234815 /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2426A5DA8400234815 /* BlockView.swift */; };
 		CEE13D2826A5DAA800234815 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2726A5DAA800234815 /* Block.swift */; };
 		CEE13D2A26A5E72A00234815 /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2926A5E72A00234815 /* ColorSet.swift */; };
+		CEE13D2F26A5F66000234815 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2E26A5F66000234815 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CEE13D2426A5DA8400234815 /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
 		CEE13D2726A5DAA800234815 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		CEE13D2926A5E72A00234815 /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
+		CEE13D2E26A5F66000234815 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +143,17 @@
 			isa = PBXGroup;
 			children = (
 				CEE13D2026A5D93D00234815 /* Main */,
+				CEE13D2D26A5F64900234815 /* Profile */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		CEE13D2D26A5F64900234815 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CEE13D2E26A5F66000234815 /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +230,7 @@
 				CEE13D2326A5D95400234815 /* WeekProgressView.swift in Sources */,
 				CEE13D2826A5DAA800234815 /* Block.swift in Sources */,
 				CEE13D1126A5D3EF00234815 /* MainView.swift in Sources */,
+				CEE13D2F26A5F66000234815 /* ProfileView.swift in Sources */,
 				CEE13D0F26A5D3EF00234815 /* CardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
