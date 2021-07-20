@@ -18,7 +18,7 @@ struct BlockView: View {
     var body: some View {
         HStack {
             leftView
-                .frame(width: UIScreen.main.bounds.width * 0.48)
+                .frame(width: UIScreen.main.bounds.width * 0.5)
                 .padding(15)
                 .background(Color.white)
             
@@ -27,7 +27,7 @@ struct BlockView: View {
         }
         .cornerRadius(20)
         .shadow(color: ColorSet.shadowGrey, radius: 10, x: 0, y: 5)
-        .frame(width: UIScreen.main.bounds.width - 50, height: 150)
+        .frame(width: UIScreen.main.bounds.width - 40, height: 150)
         .padding(12)
     }
     

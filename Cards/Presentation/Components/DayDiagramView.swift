@@ -14,12 +14,12 @@ struct DayDiagramView: View {
     let isMarked: Bool
     let weekdayIndex: Int
     
-    var weekdayText: String {
-        let russianIndex = (weekdayIndex == 7) ? 0 : weekdayIndex
+    private var weekdayText: String {
+        let russianWeekDayIndex = (weekdayIndex == 7) ? 0 : weekdayIndex
         
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "ru-RU")
-        return dateFormatter.shortStandaloneWeekdaySymbols[russianIndex].capitalized
+        return dateFormatter.shortStandaloneWeekdaySymbols[russianWeekDayIndex].capitalized
     }
     
     // MARK: - Views

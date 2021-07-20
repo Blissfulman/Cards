@@ -18,7 +18,7 @@ struct MainView: View {
     var body: some View {
         ScrollView {
             WeekProgressView()
-                        
+            
             ForEach(blocks) { block in
                 BlockView(block: block)
             }

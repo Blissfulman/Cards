@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-    
+
 struct WeekProgressView: View {
     
     // MARK: - Properties
@@ -22,6 +22,7 @@ struct WeekProgressView: View {
     var body: some View {
         VStack {
             weekView
+                .padding(.bottom, 15)
             
             Divider()
             
@@ -34,9 +35,20 @@ struct WeekProgressView: View {
     
     var weekView: some View {
         ZStack {
+            Rectangle()
+                .frame(height: 0.5)
+                .overlay(
+                    Rectangle()
+                        .stroke(style: StrokeStyle(lineWidth: 0.5))
+                        .foregroundColor(ColorSet.shadowGrey)
+                )
+                .padding()
+                .offset(x: 0, y: 12.5)
+            
             HStack {
                 ForEach(days, id: \.self) {
                     DayDiagramView(isMarked: weekData[$0] ?? false, weekdayIndex: $0)
+                        .padding(4)
                 }
             }
         }
