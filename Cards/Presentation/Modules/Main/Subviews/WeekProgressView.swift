@@ -13,8 +13,11 @@ struct WeekProgressView: View {
     
     let weekData: [Int: Bool] = [1: false, 2: true, 3: false, 4: true, 5: false, 6: true, 7: true]
     
-    var days: [Int] {
+    private var days: [Int] {
         weekData.keys.map { $0 }.sorted()
+    }
+    private var markedDaysCount: Int {
+        weekData.values.filter { $0 == true }.count
     }
     
     // MARK: - Views
@@ -26,7 +29,7 @@ struct WeekProgressView: View {
             
             Divider()
             
-            Text("4 активных дня обучения")
+            Text("\(markedDaysCount) активных дня обучения")
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
                 .font(.system(size: 18))
         }
