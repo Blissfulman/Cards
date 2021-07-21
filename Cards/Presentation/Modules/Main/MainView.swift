@@ -23,7 +23,7 @@ struct MainView: View {
                 BlockView(block: block)
             }
         }
-        .navigationBarTitle("Главная", displayMode: .inline)
+        .navigationBarTitle("Dashboard")
     }
 }
 

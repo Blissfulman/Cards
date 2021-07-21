@@ -23,10 +23,10 @@ struct BlockView: View {
                 .background(Color.white)
             
             rightView
-                .background(ColorSet.blockColorSet().randomElement())
+                .background(Palette.blockColorSet().randomElement())
         }
         .cornerRadius(20)
-        .shadow(color: ColorSet.shadowGrey, radius: 10, x: 0, y: 5)
+        .shadow(color: Palette.shadowGrey, radius: 10, x: 0, y: 5)
         .frame(width: UIScreen.main.bounds.width - 40, height: 150)
         .padding(12)
     }

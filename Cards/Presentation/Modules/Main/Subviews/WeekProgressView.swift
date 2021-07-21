@@ -43,7 +43,7 @@ struct WeekProgressView: View {
                 .overlay(
                     Rectangle()
                         .stroke(style: StrokeStyle(lineWidth: 0.5))
-                        .foregroundColor(ColorSet.shadowGrey)
+                        .foregroundColor(Palette.shadowGrey)
                 )
                 .padding()
                 .offset(x: 0, y: 12.5)

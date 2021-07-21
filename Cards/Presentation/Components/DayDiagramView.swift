@@ -32,8 +32,8 @@ struct DayDiagramView: View {
             
             ZStack {
                 Circle()
-                    .foregroundColor(isMarked ? ColorSet.purple : ColorSet.dirtyWhite)
-                    .overlay(Circle().stroke(ColorSet.shadowGrey, lineWidth: 0.5))
+                    .foregroundColor(isMarked ? Palette.purple : Palette.dirtyWhite)
+                    .overlay(Circle().stroke(Palette.shadowGrey, lineWidth: 0.5))
                     .frame(width: 35, height: 35)
                 
                 if isMarked {

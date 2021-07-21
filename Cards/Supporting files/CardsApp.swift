@@ -9,23 +9,16 @@ import SwiftUI
 
 @main
 struct CardsApp: App {
+    
+    // MARK: - Properties
+    
+    @StateObject var router = TabBarRouter()
+    
+    // MARK: - Views
+    
     var body: some Scene {
         WindowGroup {
-            TabView {
-                NavigationView {
-                    MainView()
-                }
-                .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Главная")
-                }
-                
-                ProfileView()
-                    .tabItem {
-                        Image(systemName: "person.fill")
-                        Text("Профиль")
-                    }
-            }
+            TabBarController(router: router)
         }
     }
 }

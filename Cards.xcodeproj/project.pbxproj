@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE8A29FC26A8809800EB956E /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A29FB26A8809800EB956E /* Icons.swift */; };
 		CEE13D0F26A5D3EF00234815 /* CardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D0E26A5D3EF00234815 /* CardsApp.swift */; };
 		CEE13D1126A5D3EF00234815 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D1026A5D3EF00234815 /* MainView.swift */; };
 		CEE13D1326A5D3F000234815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE13D1226A5D3F000234815 /* Assets.xcassets */; };
@@ -14,12 +15,15 @@
 		CEE13D2326A5D95400234815 /* WeekProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2226A5D95400234815 /* WeekProgressView.swift */; };
 		CEE13D2526A5DA8400234815 /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2426A5DA8400234815 /* BlockView.swift */; };
 		CEE13D2826A5DAA800234815 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2726A5DAA800234815 /* Block.swift */; };
-		CEE13D2A26A5E72A00234815 /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2926A5E72A00234815 /* ColorSet.swift */; };
+		CEE13D2A26A5E72A00234815 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2926A5E72A00234815 /* Palette.swift */; };
 		CEE13D2F26A5F66000234815 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2E26A5F66000234815 /* ProfileView.swift */; };
 		CEE13D3226A60F4800234815 /* DayDiagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D3126A60F4800234815 /* DayDiagramView.swift */; };
+		CEE13D3A26A7411A00234815 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D3926A7411A00234815 /* TabBarController.swift */; };
+		CEE13D3D26A743FC00234815 /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D3C26A743FC00234815 /* TabBarRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE8A29FB26A8809800EB956E /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 		CEE13D0B26A5D3EF00234815 /* Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE13D0E26A5D3EF00234815 /* CardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsApp.swift; sourceTree = "<group>"; };
 		CEE13D1026A5D3EF00234815 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -29,9 +33,11 @@
 		CEE13D2226A5D95400234815 /* WeekProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekProgressView.swift; sourceTree = "<group>"; };
 		CEE13D2426A5DA8400234815 /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
 		CEE13D2726A5DAA800234815 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
-		CEE13D2926A5E72A00234815 /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
+		CEE13D2926A5E72A00234815 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		CEE13D2E26A5F66000234815 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CEE13D3126A60F4800234815 /* DayDiagramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDiagramView.swift; sourceTree = "<group>"; };
+		CEE13D3926A7411A00234815 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CEE13D3C26A743FC00234815 /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +143,8 @@
 		CEE13D2B26A5E7F000234815 /* Style */ = {
 			isa = PBXGroup;
 			children = (
-				CEE13D2926A5E72A00234815 /* ColorSet.swift */,
+				CEE13D2926A5E72A00234815 /* Palette.swift */,
+				CE8A29FB26A8809800EB956E /* Icons.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -145,6 +152,7 @@
 		CEE13D2C26A5E80700234815 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CEE13D3826A7410700234815 /* TabBar */,
 				CEE13D2026A5D93D00234815 /* Main */,
 				CEE13D2D26A5F64900234815 /* Profile */,
 			);
@@ -165,6 +173,23 @@
 				CEE13D3126A60F4800234815 /* DayDiagramView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		CEE13D3826A7410700234815 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				CEE13D3926A7411A00234815 /* TabBarController.swift */,
+				CEE13D3C26A743FC00234815 /* TabBarRouter.swift */,
+				CEE13D3B26A743B000234815 /* Subviews */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		CEE13D3B26A743B000234815 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,9 +261,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE13D3A26A7411A00234815 /* TabBarController.swift in Sources */,
 				CEE13D2526A5DA8400234815 /* BlockView.swift in Sources */,
-				CEE13D2A26A5E72A00234815 /* ColorSet.swift in Sources */,
+				CEE13D2A26A5E72A00234815 /* Palette.swift in Sources */,
 				CEE13D2326A5D95400234815 /* WeekProgressView.swift in Sources */,
+				CEE13D3D26A743FC00234815 /* TabBarRouter.swift in Sources */,
+				CE8A29FC26A8809800EB956E /* Icons.swift in Sources */,
 				CEE13D2826A5DAA800234815 /* Block.swift in Sources */,
 				CEE13D1126A5D3EF00234815 /* MainView.swift in Sources */,
 				CEE13D3226A60F4800234815 /* DayDiagramView.swift in Sources */,
