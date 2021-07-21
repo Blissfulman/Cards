@@ -11,7 +11,21 @@ import SwiftUI
 struct CardsApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            TabView {
+                NavigationView {
+                    MainView()
+                }
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text("Главная")
+                }
+                
+                ProfileView()
+                    .tabItem {
+                        Image(systemName: "person.fill")
+                        Text("Профиль")
+                    }
+            }
         }
     }
 }
