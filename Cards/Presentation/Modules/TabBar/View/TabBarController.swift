@@ -26,7 +26,9 @@ struct TabBarController: View {
                 case .plus:
                     EmptyView()
                 case .profile:
-                    Palette.dirtyWhite
+                    NavigationView {
+                        NewMainView()
+                    }
                 }
                 
                 TabBarView(router: router, width: geometry.size.width, height: 85)

@@ -12,7 +12,14 @@ enum Palette {
     
     static let shadowGrey = Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
     static let purple = Color(#colorLiteral(red: 0.5562907554, green: 0.5643569458, blue: 0.9011715221, alpha: 1))
-    static let dirtyWhite = Color(#colorLiteral(red: 0.9775352219, green: 0.9663026771, blue: 0.9737913171, alpha: 1))
+    static let dirtyWhite = Color(#colorLiteral(red: 0.9803921569, green: 0.9803921569, blue: 0.9803921569, alpha: 1))
+    static let lightGray = Color(#colorLiteral(red: 0.9450980392, green: 0.9450980392, blue: 0.9450980392, alpha: 1))
+    
+    // FolderView
+    static let greenFolder = Color(#colorLiteral(red: 0.8078431373, green: 0.9058823529, blue: 0.8509803922, alpha: 1))
+    static let darkGreenFolder = Color(#colorLiteral(red: 0.662745098, green: 0.8274509804, blue: 0.7647058824, alpha: 1))
+    static let garkGray = Color(#colorLiteral(red: 0.3137254902, green: 0.3137254902, blue: 0.3137254902, alpha: 1))
+    
 }
 
 extension Palette {

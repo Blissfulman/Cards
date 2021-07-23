@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CE2DEFFA26AA827F00D454DC /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DEFF926AA827F00D454DC /* TabBarView.swift */; };
+		CE2DF00426AB305C00D454DC /* FolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DF00326AB305C00D454DC /* FolderView.swift */; };
+		CE2DF00926AB4DC400D454DC /* NewMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DF00826AB4DC400D454DC /* NewMainView.swift */; };
+		CE2DF00E26AB516100D454DC /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DF00D26AB516100D454DC /* Course.swift */; };
+		CE2DF01026AB598400D454DC /* WeekProgressViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DF00F26AB598300D454DC /* WeekProgressViewNew.swift */; };
+		CE2DF01226AB5B4200D454DC /* DayDiagramViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DF01126AB5B4200D454DC /* DayDiagramViewNew.swift */; };
 		CE8A29FC26A8809800EB956E /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A29FB26A8809800EB956E /* Icons.swift */; };
 		CEE13D0F26A5D3EF00234815 /* CardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D0E26A5D3EF00234815 /* CardsApp.swift */; };
 		CEE13D1126A5D3EF00234815 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D1026A5D3EF00234815 /* MainView.swift */; };
@@ -25,6 +30,11 @@
 
 /* Begin PBXFileReference section */
 		CE2DEFF926AA827F00D454DC /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		CE2DF00326AB305C00D454DC /* FolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderView.swift; sourceTree = "<group>"; };
+		CE2DF00826AB4DC400D454DC /* NewMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMainView.swift; sourceTree = "<group>"; };
+		CE2DF00D26AB516100D454DC /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		CE2DF00F26AB598300D454DC /* WeekProgressViewNew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekProgressViewNew.swift; sourceTree = "<group>"; };
+		CE2DF01126AB5B4200D454DC /* DayDiagramViewNew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayDiagramViewNew.swift; sourceTree = "<group>"; };
 		CE8A29FB26A8809800EB956E /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 		CEE13D0B26A5D3EF00234815 /* Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE13D0E26A5D3EF00234815 /* CardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsApp.swift; sourceTree = "<group>"; };
@@ -66,6 +76,49 @@
 			isa = PBXGroup;
 			children = (
 				CEE13D3C26A743FC00234815 /* TabBarRouter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE2DF00526AB4D6E00D454DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEE13D1026A5D3EF00234815 /* MainView.swift */,
+				CEE13D2126A5D94100234815 /* Subviews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE2DF00726AB4D9700D454DC /* NewMain */ = {
+			isa = PBXGroup;
+			children = (
+				CE2DF00C26AB515500D454DC /* Model */,
+				CE2DF00A26AB4DEB00D454DC /* View */,
+			);
+			path = NewMain;
+			sourceTree = "<group>";
+		};
+		CE2DF00A26AB4DEB00D454DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE2DF00826AB4DC400D454DC /* NewMainView.swift */,
+				CE2DF00B26AB4DF000D454DC /* Subviews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE2DF00B26AB4DF000D454DC /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				CE2DF00F26AB598300D454DC /* WeekProgressViewNew.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		CE2DF00C26AB515500D454DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE2DF00D26AB516100D454DC /* Course.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -136,8 +189,7 @@
 		CEE13D2026A5D93D00234815 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				CEE13D1026A5D3EF00234815 /* MainView.swift */,
-				CEE13D2126A5D94100234815 /* Subviews */,
+				CE2DF00526AB4D6E00D454DC /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -147,6 +199,7 @@
 			children = (
 				CEE13D2226A5D95400234815 /* WeekProgressView.swift */,
 				CEE13D2426A5DA8400234815 /* BlockView.swift */,
+				CE2DF00326AB305C00D454DC /* FolderView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -173,6 +226,7 @@
 			children = (
 				CEE13D3826A7410700234815 /* TabBar */,
 				CEE13D2026A5D93D00234815 /* Main */,
+				CE2DF00726AB4D9700D454DC /* NewMain */,
 				CEE13D2D26A5F64900234815 /* Profile */,
 			);
 			path = Modules;
@@ -190,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				CEE13D3126A60F4800234815 /* DayDiagramView.swift */,
+				CE2DF01126AB5B4200D454DC /* DayDiagramViewNew.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -281,15 +336,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEE13D3A26A7411A00234815 /* TabBarController.swift in Sources */,
+				CE2DF00926AB4DC400D454DC /* NewMainView.swift in Sources */,
+				CE2DF01226AB5B4200D454DC /* DayDiagramViewNew.swift in Sources */,
 				CEE13D2526A5DA8400234815 /* BlockView.swift in Sources */,
+				CE2DF00426AB305C00D454DC /* FolderView.swift in Sources */,
 				CEE13D2A26A5E72A00234815 /* Palette.swift in Sources */,
 				CEE13D2326A5D95400234815 /* WeekProgressView.swift in Sources */,
 				CEE13D3D26A743FC00234815 /* TabBarRouter.swift in Sources */,
 				CE8A29FC26A8809800EB956E /* Icons.swift in Sources */,
 				CEE13D2826A5DAA800234815 /* Block.swift in Sources */,
 				CEE13D1126A5D3EF00234815 /* MainView.swift in Sources */,
+				CE2DF01026AB598400D454DC /* WeekProgressViewNew.swift in Sources */,
 				CEE13D3226A60F4800234815 /* DayDiagramView.swift in Sources */,
 				CEE13D2F26A5F66000234815 /* ProfileView.swift in Sources */,
+				CE2DF00E26AB516100D454DC /* Course.swift in Sources */,
 				CE2DEFFA26AA827F00D454DC /* TabBarView.swift in Sources */,
 				CEE13D0F26A5D3EF00234815 /* CardsApp.swift in Sources */,
 			);

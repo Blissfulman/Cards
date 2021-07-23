@@ -46,7 +46,7 @@ struct WeekProgressView: View {
                         .foregroundColor(Palette.shadowGrey)
                 )
                 .padding()
-                .offset(x: 0, y: 12.5)
+                .offset(y: 12.5)
             
             HStack {
                 ForEach(days, id: \.self) {
