@@ -1,40 +1,11 @@
 //
-//  TabBarController.swift
+//  TabBarView.swift
 //  Cards
 //
-//  Created by Evgeny Novgorodov on 20.07.2021.
+//  Created by Evgeny Novgorodov on 23.07.2021.
 //
 
 import SwiftUI
-
-struct TabBarController: View {
-    
-    // MARK: - Properties
-    
-    @StateObject var router: TabBarRouter
-    
-    // MARK: - Views
-    
-    var body: some View {
-        GeometryReader { geometry in
-            VStack(spacing: 0) {
-                switch router.currentPage {
-                case .main:
-                    NavigationView {
-                        MainView()
-                    }
-                case .plus:
-                    EmptyView()
-                case .profile:
-                    Palette.dirtyWhite
-                }
-                
-                TabBarView(router: router, width: geometry.size.width, height: 85)
-            }
-            .edgesIgnoringSafeArea(.bottom)
-        }
-    }
-}
 
 struct TabBarView: View {
     
@@ -73,13 +44,15 @@ struct TabBarView: View {
     }
 }
 
-struct TabBarIcon: View {
+// MARK: - Subviews
+
+private struct TabBarIcon: View {
     
     // MARK: - Properties
     
     @StateObject var router: TabBarRouter
     
-    let assignedPage: TabBarPage
+    let assignedPage: TabBarRouter.TabBarPage
     let iconImage: Image
     
     private let iconSize: CGFloat = 28
@@ -109,7 +82,7 @@ struct TabBarIcon: View {
     }
 }
 
-struct CentralButton: View {
+private struct CentralButton: View {
     
     // MARK: - Properties
     
@@ -143,10 +116,9 @@ struct CentralButton: View {
 
 // MARK: - Previews
 
-struct TabBar_Previews: PreviewProvider {
+struct TabBarView_Previews: PreviewProvider {
     
     static var previews: some View {
-        TabBarController(router: TabBarRouter())
-            .preferredColorScheme(.light)
+        TabBarView(router: TabBarRouter(), width: UIScreen.main.bounds.width, height: 85)
     }
 }

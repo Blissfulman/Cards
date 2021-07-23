@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2DEFFA26AA827F00D454DC /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DEFF926AA827F00D454DC /* TabBarView.swift */; };
 		CE8A29FC26A8809800EB956E /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A29FB26A8809800EB956E /* Icons.swift */; };
 		CEE13D0F26A5D3EF00234815 /* CardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D0E26A5D3EF00234815 /* CardsApp.swift */; };
 		CEE13D1126A5D3EF00234815 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D1026A5D3EF00234815 /* MainView.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE2DEFF926AA827F00D454DC /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		CE8A29FB26A8809800EB956E /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 		CEE13D0B26A5D3EF00234815 /* Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE13D0E26A5D3EF00234815 /* CardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsApp.swift; sourceTree = "<group>"; };
@@ -51,6 +53,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE2DEFF726AA823D00D454DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEE13D3926A7411A00234815 /* TabBarController.swift */,
+				CEE13D3B26A743B000234815 /* Subviews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE2DEFF826AA824500D454DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEE13D3C26A743FC00234815 /* TabBarRouter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CEE13D0226A5D3EF00234815 = {
 			isa = PBXGroup;
 			children = (
@@ -178,9 +197,8 @@
 		CEE13D3826A7410700234815 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				CEE13D3926A7411A00234815 /* TabBarController.swift */,
-				CEE13D3C26A743FC00234815 /* TabBarRouter.swift */,
-				CEE13D3B26A743B000234815 /* Subviews */,
+				CE2DEFF826AA824500D454DC /* Model */,
+				CE2DEFF726AA823D00D454DC /* View */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -188,6 +206,7 @@
 		CEE13D3B26A743B000234815 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				CE2DEFF926AA827F00D454DC /* TabBarView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -271,6 +290,7 @@
 				CEE13D1126A5D3EF00234815 /* MainView.swift in Sources */,
 				CEE13D3226A60F4800234815 /* DayDiagramView.swift in Sources */,
 				CEE13D2F26A5F66000234815 /* ProfileView.swift in Sources */,
+				CE2DEFFA26AA827F00D454DC /* TabBarView.swift in Sources */,
 				CEE13D0F26A5D3EF00234815 /* CardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
