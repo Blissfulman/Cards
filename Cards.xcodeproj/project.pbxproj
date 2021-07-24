@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EE934F826AB4F0B00F75EBD /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE934F726AB4F0B00F75EBD /* MainScreenView.swift */; };
+		5EE934FA26AB4F1200F75EBD /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE934F926AB4F1200F75EBD /* MainScreenViewModel.swift */; };
 		CE2DEFFA26AA827F00D454DC /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DEFF926AA827F00D454DC /* TabBarView.swift */; };
 		CE8A29FC26A8809800EB956E /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A29FB26A8809800EB956E /* Icons.swift */; };
 		CEE13D0F26A5D3EF00234815 /* CardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D0E26A5D3EF00234815 /* CardsApp.swift */; };
@@ -17,13 +19,14 @@
 		CEE13D2526A5DA8400234815 /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2426A5DA8400234815 /* BlockView.swift */; };
 		CEE13D2826A5DAA800234815 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2726A5DAA800234815 /* Block.swift */; };
 		CEE13D2A26A5E72A00234815 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2926A5E72A00234815 /* Palette.swift */; };
-		CEE13D2F26A5F66000234815 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D2E26A5F66000234815 /* ProfileView.swift */; };
 		CEE13D3226A60F4800234815 /* DayDiagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D3126A60F4800234815 /* DayDiagramView.swift */; };
 		CEE13D3A26A7411A00234815 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D3926A7411A00234815 /* TabBarController.swift */; };
 		CEE13D3D26A743FC00234815 /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE13D3C26A743FC00234815 /* TabBarRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5EE934F726AB4F0B00F75EBD /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		5EE934F926AB4F1200F75EBD /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
 		CE2DEFF926AA827F00D454DC /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		CE8A29FB26A8809800EB956E /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 		CEE13D0B26A5D3EF00234815 /* Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,7 +39,6 @@
 		CEE13D2426A5DA8400234815 /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
 		CEE13D2726A5DAA800234815 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		CEE13D2926A5E72A00234815 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
-		CEE13D2E26A5F66000234815 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CEE13D3126A60F4800234815 /* DayDiagramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDiagramView.swift; sourceTree = "<group>"; };
 		CEE13D3926A7411A00234815 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		CEE13D3C26A743FC00234815 /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
@@ -53,6 +55,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EE934F426AB4EAA00F75EBD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5EE934F526AB4ED400F75EBD /* Screens */,
+				CEE13D2C26A5E80700234815 /* Modules */,
+				CEE13D2B26A5E7F000234815 /* Style */,
+				CEE13D3026A6044500234815 /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5EE934F526AB4ED400F75EBD /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5EE934FC26AB540900F75EBD /* MainScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5EE934F626AB4EFE00F75EBD /* WeekProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				CEE13D2226A5D95400234815 /* WeekProgressView.swift */,
+			);
+			path = WeekProgressView;
+			sourceTree = "<group>";
+		};
+		5EE934FC26AB540900F75EBD /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5EE934F726AB4F0B00F75EBD /* MainScreenView.swift */,
+				5EE934F926AB4F1200F75EBD /* MainScreenViewModel.swift */,
+				5EE934F626AB4EFE00F75EBD /* WeekProgressView */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
 		CE2DEFF726AA823D00D454DC /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +128,7 @@
 		CEE13D0D26A5D3EF00234815 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				5EE934F426AB4EAA00F75EBD /* UI */,
 				CEE13D2626A5DA9C00234815 /* Models */,
 				CEE13D1F26A5D66500234815 /* Presentation */,
 				CEE13D1D26A5D62B00234815 /* Resources */,
@@ -126,9 +166,6 @@
 		CEE13D1F26A5D66500234815 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				CEE13D3026A6044500234815 /* Components */,
-				CEE13D2B26A5E7F000234815 /* Style */,
-				CEE13D2C26A5E80700234815 /* Modules */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -136,19 +173,8 @@
 		CEE13D2026A5D93D00234815 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				CEE13D1026A5D3EF00234815 /* MainView.swift */,
-				CEE13D2126A5D94100234815 /* Subviews */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		CEE13D2126A5D94100234815 /* Subviews */ = {
-			isa = PBXGroup;
-			children = (
-				CEE13D2226A5D95400234815 /* WeekProgressView.swift */,
-				CEE13D2426A5DA8400234815 /* BlockView.swift */,
-			);
-			path = Subviews;
 			sourceTree = "<group>";
 		};
 		CEE13D2626A5DA9C00234815 /* Models */ = {
@@ -171,19 +197,13 @@
 		CEE13D2C26A5E80700234815 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CEE13D1026A5D3EF00234815 /* MainView.swift */,
+				CEE13D2426A5DA8400234815 /* BlockView.swift */,
+				CE2DEFF926AA827F00D454DC /* TabBarView.swift */,
 				CEE13D3826A7410700234815 /* TabBar */,
 				CEE13D2026A5D93D00234815 /* Main */,
-				CEE13D2D26A5F64900234815 /* Profile */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		CEE13D2D26A5F64900234815 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				CEE13D2E26A5F66000234815 /* ProfileView.swift */,
-			);
-			path = Profile;
 			sourceTree = "<group>";
 		};
 		CEE13D3026A6044500234815 /* Components */ = {
@@ -206,7 +226,6 @@
 		CEE13D3B26A743B000234815 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				CE2DEFF926AA827F00D454DC /* TabBarView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -289,9 +308,10 @@
 				CEE13D2826A5DAA800234815 /* Block.swift in Sources */,
 				CEE13D1126A5D3EF00234815 /* MainView.swift in Sources */,
 				CEE13D3226A60F4800234815 /* DayDiagramView.swift in Sources */,
-				CEE13D2F26A5F66000234815 /* ProfileView.swift in Sources */,
 				CE2DEFFA26AA827F00D454DC /* TabBarView.swift in Sources */,
+				5EE934F826AB4F0B00F75EBD /* MainScreenView.swift in Sources */,
 				CEE13D0F26A5D3EF00234815 /* CardsApp.swift in Sources */,
+				5EE934FA26AB4F1200F75EBD /* MainScreenViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

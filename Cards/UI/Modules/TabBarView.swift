@@ -13,8 +13,8 @@ struct TabBarView: View {
     
     @StateObject var router: TabBarRouter
     
-    let width: CGFloat
-    let height: CGFloat
+    let width: CGFloat = UIScreen.main.bounds.width
+    let height: CGFloat = 85
     
     // MARK: - Views
     
@@ -119,6 +119,6 @@ private struct CentralButton: View {
 struct TabBarView_Previews: PreviewProvider {
     
     static var previews: some View {
-        TabBarView(router: TabBarRouter(), width: UIScreen.main.bounds.width, height: 85)
+        TabBarView(router: TabBarRouter())
     }
 }

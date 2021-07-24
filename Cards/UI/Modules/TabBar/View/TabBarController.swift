@@ -16,7 +16,7 @@ struct TabBarController: View {
     // MARK: - Views
     
     var body: some View {
-        GeometryReader { geometry in
+//        GeometryReader { geometry in
             VStack(spacing: 0) {
                 switch router.currentPage {
                 case .main:
@@ -29,10 +29,10 @@ struct TabBarController: View {
                     Palette.dirtyWhite
                 }
                 
-                TabBarView(router: router, width: geometry.size.width, height: 85)
+                TabBarView(router: router)
             }
             .edgesIgnoringSafeArea(.bottom)
-        }
+//        }
     }
 }
 
